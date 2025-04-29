@@ -5,7 +5,7 @@ import time
 cap = cv2.VideoCapture(0)
 time.sleep(2)
 
-# Capture background
+
 print("Capturing background... Please stay out of the frame.")
 for i in range(30):
     ret, background = cap.read()
@@ -57,7 +57,7 @@ while cap.isOpened():
 
     color_mask = np.zeros_like(manual_mask)
 
-    # Auto color detection mask
+    
     if selected_hsv is not None:
         h, s, v = map(int, selected_hsv)
         sensitivity = 20
@@ -80,7 +80,7 @@ while cap.isOpened():
     normal_area = cv2.bitwise_and(frame, frame, mask=inverse_mask)
     final_output = cv2.addWeighted(cloak_area, 1, normal_area, 1, 0)
 
-    # Overlay instructions
+    
     cv2.putText(final_output, "CTRL+Click = Pick Color | Draw = Manual | 'c'=Clear | 'q'=Quit",
                 (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
 
