@@ -5,7 +5,7 @@ import time
 cap = cv2.VideoCapture(0)
 time.sleep(2)
 
-
+# Capture background
 print("Capturing background... Please stay out of the frame.")
 for i in range(30):
     ret, background = cap.read()
