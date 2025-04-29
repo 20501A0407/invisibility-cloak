@@ -86,12 +86,4 @@ while cap.isOpened():
 
     cv2.imshow("Invisibility Cloak", final_output)
 
-    key = cv2.waitKey(1) & 0xFF
-    if key == ord('q'):
-        break
-    elif key == ord('c'):
-        manual_mask = np.zeros_like(manual_mask)
-        print("[Cleared] Manual drawing mask")
-
-cap.release()
-cv2.destroyAllWindows()
+   
