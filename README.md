@@ -1,9 +1,9 @@
-# 🧥 Real-Time Invisibility Cloak using Python & OpenCV
+# Real-Time Invisibility Cloak using Python & OpenCV
 
 Bring the magic of Harry Potter to life! 🧙‍♂️  
 This project uses computer vision to create a real-time invisibility cloak effect using Python, OpenCV, and NumPy.
 
-## ✨ Features
+## Features
 
 - 🎨 Color-based cloak detection (auto-selected or manually drawn)
 - 🖌️ Manual mask drawing support
